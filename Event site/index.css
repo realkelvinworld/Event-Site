@@ -1,0 +1,633 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+/* Fonts */
+/* font-family: 'Karla', sans-serif;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-family: 'Quicksand', sans-serif; */
+#hero-section {
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-between;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(./images/hero_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 20px;
+  /* padding-top: 10px;
+  flex-wrap: wrap; */
+}
+#navlist {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  width: 200px;
+}
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+  /* margin-top: 20px; */
+  /* border: solid red; */
+}
+
+/* Navbar */
+/* The sidepanel menu */
+.sidepanel {
+  height: 350px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f18953;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.side-pan-img {
+  margin: auto 10%;
+}
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  /* padding: 10px 15px; */
+  border: none;
+}
+
+.openbtn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Hero section 2 */
+#hero-sec2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.sec2-h1 {
+  color: white;
+  font-size: 64px;
+}
+.spn1 {
+  color: #f18953;
+}
+.sec2-h2-1 {
+  color: white;
+  font-size: 32px;
+}
+.sec2-h2-2 {
+  color: #f18953;
+  font-size: 32px;
+}
+
+/* Hero section 3 */
+#hero-sec3 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sec3-d1 {
+  width: 572px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  /* border: solid red; */
+}
+.sec3-p {
+  width: 297px;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.sec3-btn {
+  border: solid #f18953;
+  border-width: 4px;
+  background: transparent;
+  padding: 8px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: ease-out 0.5s;
+  color: white;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+.sec3-btn:hover {
+  box-shadow: inset 300px 0 0 0 #f18953;
+  color: black;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* Second Section */
+#second-section {
+  padding: 60px;
+  margin: 100px 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.second-sec-headers {
+  text-align: center;
+}
+.spn2 {
+  color: #f18953;
+}
+.header-2 {
+  font-weight: 400;
+}
+.second-sec-mid {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mid-d1,
+.mid-d2,
+.mid-d3 {
+  width: 400px;
+  text-align: center;
+  /* border: solid red; */
+}
+.mid1-h1,
+.mid2-h1,
+.mid3-h1 {
+  color: #f18953;
+}
+.mid3-h1 {
+  padding-top: 50px;
+}
+.mid3-img {
+  padding-top: 20px;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* Third section */
+#third-section {
+  display: flex;
+  padding: 80px 50px;
+  justify-content: space-between;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(./images/hexbgsvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  background-color: #181818;
+}
+.third-sec-m1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+}
+
+.third-sec-header1 {
+  color: #ffff;
+}
+.third-sec-header2 {
+  color: #f18953;
+  font-weight: 300;
+}
+.third-sec-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+.third-sec-list div {
+  padding: 20px;
+}
+.third-sec-m2 {
+  background-image: url(./images/squiggles.png);
+  background-size: cover;
+  width: 100%;
+  padding: 80px 20px;
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+}
+.third-sec-header3 {
+  color: #f18953;
+  text-align: center;
+  font-size: 40px;
+  margin: 18px 0 0 0;
+  padding: 0 0 20px 0;
+}
+.spn5 {
+  color: #181818;
+  font-size: 20px;
+}
+.third-sec-btn {
+  padding: 20px 70px;
+  background: #f18953;
+  border: solid 2px #f18953;
+  transition: ease-out 0.5s;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  color: #181818;
+}
+.third-sec-btn:hover {
+  box-shadow: inset 300px 0 0 0 #181818;
+  color: #f18953;
+}
+
+/* /////////////////////////////////// */
+/* ////////////////////////////////// */
+/* Fourth section */
+#fourth-section {
+  display: flex;
+  padding: 80px 50px;
+  justify-content: space-between;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(./images/hexbgsvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  background-color: #181818;
+}
+.fourth-sec-main {
+  text-align: center;
+}
+.fourth-sec-m1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+}
+.fourth-sec-header1 {
+  color: #ffff;
+}
+.fourth-sec-header2 {
+  color: #f18953;
+  font-weight: 300;
+}
+.fourth-sec-list1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+.fourth-sec-list1 div {
+  padding: 20px;
+}
+.fourth-sec-m2 {
+  background-image: url(./images/squiggles.png);
+  background-size: cover;
+  width: 100%;
+  padding: 80px 20px;
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+}
+.fourth-sec-header3 {
+  color: #f18953;
+  text-align: center;
+  font-size: 40px;
+  margin: 18px 0 0 0;
+}
+.fourth-sec-btn {
+  padding: 10px 90px;
+  background: transparent;
+  border: solid 2px #f18953;
+  transition: ease-out 0.5s;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #f18953;
+}
+.fourth-sec-btn:hover {
+  box-shadow: inset 300px 0 0 0 #f18953;
+  color: #181818;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* fifth section */
+#fifth-section {
+  /* height: 900px; */
+  padding: 60px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.fifth-h1,
+.fifth-h2 {
+  text-align: center;
+}
+.fifth-h2 {
+  font-weight: 400;
+}
+.spn3 {
+  color: #f18953;
+}
+/* .fifth-main-mid {
+} */
+.fifth-mid-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0 0 0;
+  flex-wrap: wrap;
+}
+.input1,
+.input2 {
+  border: solid rgba(0, 0, 0, 0.678);
+  border-width: 0 0 1px 0;
+  width: 20vw;
+  padding: 30px 0 20px 0;
+  font-size: 20px;
+  outline: none;
+}
+.input3 {
+  border: solid rgba(0, 0, 0, 0.678);
+  border-width: 0 0 1px 0;
+  width: 67vw;
+  padding: 30px 0 20px 0;
+  font-size: 20px;
+  outline: none;
+}
+
+.fifth-mid-2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0 100px 0;
+  flex-wrap: wrap;
+}
+.sign-btn {
+  /* width: 300px; */
+  padding: 10px 80px;
+  background: transparent;
+  border: solid 2px #f18953;
+  transition: ease-out 0.5s;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #f18953;
+}
+.sign-btn:hover {
+  box-shadow: inset 300px 0 0 0 #f18953;
+  color: black;
+}
+.fifth-p1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 50px 0 50px;
+}
+.fifth-p2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+.spn4 {
+  color: #f18953;
+}
+#sixth-section {
+  /* height: 700px; */
+  background-image: url(./images/printsvg.svg);
+  background-size: cover;
+  background-color: #f18953;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px;
+  cursor: pointer;
+  width: 100vw;
+  text-align: center;
+}
+.sixth-mid {
+  margin: 100px auto;
+  text-align: center;
+}
+.sixth-header {
+  padding: 10px 0 0 0;
+  color: white;
+}
+.sixth-img2 {
+  padding: 20px 0 0 0;
+}
+
+/* //////////////////////////////////// */
+/* /////////////////////////////////// */
+/* Footer */
+#footer {
+  /* height: 500px; */
+  background: #181818;
+  display: flex;
+  padding: 100px 50px 20px 50px;
+  /* justify-content: space-between; */
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.footer-div-one,
+.footer-div-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+.footer-ul {
+  padding: 20px 20px 20px 0;
+  text-align: left;
+}
+.footer-ul li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 20px;
+  /* line-height: 25px; */
+  color: #ffff;
+  padding: 0;
+  margin: 0;
+}
+.footer-div-header {
+  color: #f18953;
+}
+.footer-p {
+  color: #ffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 20px 0 20px 0;
+}
+#git {
+  text-align: center;
+}
+#git a {
+  text-decoration: none;
+  color: white;
+}
+#git a:hover {
+  color: #f18953;
+}
+/* //////////////////////////////////// */
+/*  ///////////////////////////////////*/
+/* Media Queries */
+@media only screen and (min-width: 240px) and (max-width: 1024px) {
+  /* Remember tp shrink everything to fit in the hero section */
+  #hero-section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(./images/hero_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-logo {
+    width: 100px;
+  }
+  .hero-diagram {
+    width: 200px;
+  }
+  .sec2-h1,
+  .sec2-h2-1,
+  .sec2-h2-2 {
+    font-size: 30px;
+  }
+  .sec3-img {
+    display: none;
+  }
+  /* Remember to reduce form input width */
+  .fifth-header {
+    padding: 20px;
+  }
+  #fifth-section {
+    align-items: center;
+  }
+  .fifth-mid-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .input1,
+  .input2 {
+    width: 200px;
+  }
+  .input3 {
+    width: 50vw;
+  }
+  /* Remember to center align form section*/
+  /* footer */
+  .cp {
+    display: none;
+  }
+  .footer-p {
+    margin: 0 auto;
+  }
+  #navbar {
+    padding: 20px;
+  }
+  .fifth-header1 {
+    padding: 20px 0 20px 0;
+  }
+  .spn5 {
+    color: #f18953;
+  }
+  .third-sec-m2 {
+    background: transparent;
+  }
+}
+
+/* ///////////////////////////////// */
+/* //////////////////////////////// */
+/* Nav Sticky on scroll */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
